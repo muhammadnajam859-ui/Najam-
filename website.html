@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Najam | Developer & NGO Professional</title>
+    <style>
+        /* CSS STYLES */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { color: #333; line-height: 1.6; background-color: #fff; }
+
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #e67e22; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 30px; }
+        nav ul li a { text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: #e67e22; }
+
+        /* Hero Section */
+        .hero { 
+            height: 70vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; 
+            background-position: center;
+            color: white; 
+            padding: 0 20px; 
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.3rem; max-width: 700px; margin-bottom: 30px; color: #ddd; }
+        .btn { padding: 12px 35px; background: #e67e22; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #d35400; }
+
+        /* General Section Styling */
+        section { padding: 80px 10%; }
+        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; position: relative; padding-bottom: 15px; }
+        h2::after { content: ''; width: 80px; height: 4px; background: #e67e22; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        /* About & NGO Experience */
+        .about-container { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+        .about-text { flex: 1; min-width: 300px; }
+        .about-image { flex: 1; min-width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .about-image img { width: 100%; display: block; }
+
+        /* Skills Grid */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center; }
+        .skill-card { padding: 25px; background: #f9f9f9; border-radius: 10px; border-bottom: 4px solid #e67e22; font-weight: bold; }
+
+        /* Experience Timeline */
+        .exp-box { background: #fff; border-left: 5px solid #e67e22; padding: 20px 30px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .exp-box h3 { color: #e67e22; }
+        .exp-box span { font-size: 0.9rem; color: #777; font-weight: bold; }
+
+        /* Contact Box */
+        .contact-box { text-align: center; background: #fdf2e9; padding: 50px; border-radius: 15px; }
+        .phone-link { font-size: 2rem; color: #e67e22; text-decoration: none; font-weight: bold; display: block; margin: 15px 0; }
+
+        /* Footer */
+        footer { background: #222; color: white; padding: 40px 10%; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Muhammad Najam</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Muhammad Najam</h1>
+        <p>Full Stack Developer & Social Impact Professional at Awaz2 NGO</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="exp-box">
+            <h3>Program Associate / Team Member</h3>
+            <span>Awaz2 NGO Program | 2024 - Present</span>
+            <p>Working actively within the Awaz2 NGO program to drive social change, manage community projects, and implement digital solutions for better program tracking.</p>
+        </div>
+        <div class="exp-box">
+            <h3>Database & Web Specialist</h3>
+            <span>Freelance / Personal Projects</span>
+            <p>Developing custom database management systems and responsive websites using modern programming stacks.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="p.jpeg" alt="p">
+            </div>
+            <div class="about-text">
+                <h2>Why Choose Me?</h2>
+                <p>I bring a unique combination of **technical skills** and **social responsibility**. My work with Awaz2 NGO has taught me the importance of communication and management, while my coding background allows me to build the tools needed for modern success.</p>
+                <br>
+                <p>I specialize in creating efficient databases and clean user interfaces that solve real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: #fcfcfc;">
+        <h2>My Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML / CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Database Management</div>
+            <div class="skill-card">Community Leadership</div>
+            <div class="skill-card">NGO Operations</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-box">
+            <p>Let's collaborate on a project or social initiative!</p>
+            <a href="tel:03009015756" class="phone-link">0300 9015756</a>
+            <a href="https://wa.me/923009015756" class="btn" target="_blank">Message on WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Najam | Awaz2 NGO Program | Built with Python & Web Tech</p>
+    </footer>
+
+</body>
+</html>
